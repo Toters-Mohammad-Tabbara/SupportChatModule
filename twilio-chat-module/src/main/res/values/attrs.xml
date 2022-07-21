@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="arabicFontSize" format="integer" />
+        <attr name="englishFontSize" format="integer" />
+        <attr name="arabicFont" format="string" />
+        <attr name="englishFont" format="string" />
+        <attr name="kurdishFont" format="string" />
+        <attr name="kerning" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomMaterialButton">
+        <attr name="btnArabicFont" format="string" />
+        <attr name="btnEnglishFont" format="string" />
+        <attr name="btnArabicFontSize" format="string" />
+        <attr name="btnEnglishFontSize" format="string" />
+        <attr name="btnLetterSpacing" format="float" />
+    </declare-styleable>
+</resources>

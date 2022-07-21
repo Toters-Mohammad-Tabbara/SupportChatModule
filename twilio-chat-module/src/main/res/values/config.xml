@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="circular_std_medium" translatable="false">circular_std_medium.ttf</string>
+    <string name="circular_std_book" translatable="false">circular_std_book.ttf</string>
+    <string name="diodrum_arabic_medium" translatable="false">diodrum_arabic_medium.ttf</string>
+    <string name="diodrum_arabic_regular" translatable="false">diodrum_arabic_regular.ttf</string>
+    <string name="tajawal_bold" translatable="false">tajawal_bold.ttf</string>
+
+
+    <!---English fonts-->
+    <string name="noto_black" translatable="false">noto_sans_black.ttf</string>
+    <string name="noto_light" translatable="false">noto_sans_light.ttf</string>
+    <string name="noto_medium" translatable="false">noto_sans_medium.ttf</string>
+    <string name="noto_regular" translatable="false">noto_sans_regular.ttf</string>
+    <string name="noto_semi_bold" translatable="false">noto_sans_semi_bold.ttf</string>
+    <string name="noto_sans_bold" translatable="false">noto_sans_bold.ttf</string>
+
+    <!---Arabic fonts-->
+    <string name="noto_arabic_light" translatable="false">noto_sans_arabic_ui_light.ttf</string>
+    <string name="noto_arabic_bold" translatable="false">noto_sans_arabic_ui_bold.ttf</string>
+    <string name="noto_arabic_regular" translatable="false">noto_sans_arabic_ui_regular.ttf</string>
+    <string name="noto_arabic_semi_bold" translatable="false">noto_sans_arabic_ui_semi_bold.ttf</string>
+
+    <!---Kurdish arabic fonts-->
+    <string name="kurdish_bold" translatable="false">kurdi_bold.ttf</string>
+    <string name="kurdish_regular" translatable="false">kurdi_regular.ttf</string>
+    <string name="kurdish_semi_bold" translatable="false">kurdi_semi_bold</string>
+</resources>

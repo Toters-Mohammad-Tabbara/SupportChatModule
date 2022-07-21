@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.toters.twilio_chat_module.widgets.CustomMaterialButton
+        android:id="@+id/chatCreatedDateTextView"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:clickable="false"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:letterSpacing="0"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:btnArabicFont="@string/noto_arabic_regular"
+        app:btnArabicFontSize="12"
+        app:btnEnglishFont="@string/noto_regular"
+        app:btnEnglishFontSize="12"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@android:color/transparent"
+        app:strokeColor="@color/colorLightGrey" />
+
+    <Space
+        android:id="@+id/dateBottomSpacing"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatCreatedDateTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

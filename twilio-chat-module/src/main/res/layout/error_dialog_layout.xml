@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:paddingTop="2dp">
+
+    <com.toters.twilio_chat_module.widgets.CustomTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="0"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        custom:arabicFont="@string/noto_arabic_semi_bold"
+        custom:arabicFontSize="19"
+        custom:englishFont="@string/noto_semi_bold"
+        custom:englishFontSize="18"
+        tools:text="Title" />
+
+    <com.toters.twilio_chat_module.widgets.CustomTextView
+        android:id="@+id/dialog_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:includeFontPadding="false"
+        android:letterSpacing="0"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/colorGray"
+        android:textDirection="anyRtl"
+        custom:arabicFont="@string/noto_arabic_regular"
+        custom:arabicFontSize="15"
+        custom:englishFont="@string/noto_regular"
+        custom:englishFontSize="14"
+        tools:text="Something went wrong! Please try again." />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_msg"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorBgGreyColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.toters.twilio_chat_module.widgets.CustomMaterialButton
+            android:id="@+id/dialog_positive_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            custom:btnArabicFont="@string/noto_arabic_semi_bold"
+            custom:btnArabicFontSize="14"
+            custom:btnEnglishFont="@string/noto_semi_bold"
+            custom:btnEnglishFontSize="14"
+            custom:btnLetterSpacing="0"
+            tools:ignore="UnusedAttribute"
+            tools:text="Do Not cancel" />
+
+        <View
+            android:id="@+id/button_separator"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBgGreyColor" />
+
+        <com.toters.twilio_chat_module.widgets.CustomMaterialButton
+            android:id="@+id/dialog_negative_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            custom:btnArabicFont="@string/noto_arabic_semi_bold"
+            custom:btnArabicFontSize="14"
+            custom:btnEnglishFont="@string/noto_semi_bold"
+            custom:btnEnglishFontSize="14"
+            custom:btnLetterSpacing="0"
+            tools:ignore="UnusedAttribute"
+            tools:text="Cancel Subscription" />
+    </LinearLayout>
+
+</RelativeLayout>

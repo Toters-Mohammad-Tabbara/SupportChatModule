@@ -1,0 +1,66 @@
+<resources>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="typing_indicator">%s is typing…</string>
+
+    <string name="notification_media_message">Media message with %d attachments</string>
+    <string name="notification_media">Media</string>
+
+    <string name="err_conversation_generic_error">Request failed, please try again later</string>
+    <string name="err_failed_to_create_conversation">Failed to create conversation</string>
+    <string name="err_failed_to_join_conversation">Failed to join conversation</string>
+    <string name="err_failed_to_remove_conversation">Failed to remove conversation</string>
+    <string name="err_failed_to_leave_conversation">Failed to leave conversation</string>
+    <string name="err_failed_to_fetch_user_conversations">Failed to fetch user conversations</string>
+    <string name="err_failed_to_mute_conversations">Failed to mute conversation</string>
+    <string name="err_failed_to_unmute_conversation">Failed to unmute conversation</string>
+    <string name="err_failed_to_update_reaction">Failed to update reaction</string>
+    <string name="err_failed_to_rename_conversation">Failed to rename conversation</string>
+    <string name="err_failed_to_get_conversation">Failed to get conversation</string>
+    <string name="err_failed_to_fetch_participants">Failed to fetch participants</string>
+    <string name="err_failed_to_add_participant">Failed to add participant</string>
+    <string name="err_failed_to_remove_participant">Failed to remove participant</string>
+    <string name="err_failed_to_update_user">Can\'t update profile</string>
+    <string name="err_failed_to_remove_message">Failed to remove message</string>
+    <string name="err_failed_to_copy_message">Failed to copy message</string>
+    <string name="sign_out_succeeded">Successfully signed out</string>
+
+    <!-- Media messages -->
+    <string name="attachment_uploading">Uploading… %s</string>
+    <string name="attachment_downloading">Downloading… %s</string>
+    <string name="attachment_tap_to_open">Tap to open</string>
+    <string name="err_failed_to_resend_media">Failed to re-send media</string>
+    <string name="err_failed_to_upload_media">Failed to upload</string>
+    <string name="err_failed_to_download_media">Failed to download</string>
+
+    <string name="send_error_dialog_title">Error code [%d]</string>
+    <string name="send_error_dialog_message_default">Error occurred while sending the message. Check your internet connection and try again.</string>
+    <string name="send_error_dialog_invalid_media_content_type">Invalid message media content type</string>
+
+    <string name="close">Close</string>
+    <string name="retry">Retry</string>
+
+    <string name="action_take_pic">Take a picture</string>
+    <string name="action_upload_gallery">Upload from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="connecting">Connecting</string>
+    <string name="a_toters_will_be_in_touch_shortly">A toters agent will be in touch shortly</string>
+    <string name="error_title">Error</string>
+    <string name="action_ok">Okay</string>
+
+    <!-- Others -->
+
+    <string name="message_deleted">Message deleted</string>
+    <string name="message_copied">Message copied</string>
+
+    <string name="chat_hint_message">Message</string>
+    <string name="label_chat_support">Chat Support</string>
+    <string name="rating_agent_question">How was your experience with our agent?</string>
+    <string name="your_rating_is_valuable">Your rating is valuable</string>
+    <string name="yester_day_label">Yesterday</string>
+    <string name="excellent">Excellent!</string>
+    <string name="bad">Bad</string>
+    <string name="thanks_feedback">Thank you for your feedback!</string>
+
+</resources>

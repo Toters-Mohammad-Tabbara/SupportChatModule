@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_image_pop_up">
+
+    <ImageView
+        android:id="@+id/imageArrowDown"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_dismiss_modal_handle" />
+
+    <com.toters.twilio_chat_module.widgets.CustomMaterialButton
+        android:id="@+id/btn_take_pic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/action_take_pic"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#00B391"
+        app:btnArabicFont="@string/noto_arabic_regular"
+        app:btnArabicFontSize="14"
+        app:btnEnglishFont="@string/noto_regular"
+        app:btnEnglishFontSize="16"
+        app:btnLetterSpacing="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageArrowDown" />
+
+    <View
+        android:id="@+id/viewSeparateTakeUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E5E7E9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_take_pic" />
+
+    <com.toters.twilio_chat_module.widgets.CustomMaterialButton
+        android:id="@+id/btn_upload_gallery"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/action_upload_gallery"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#00B391"
+        app:btnArabicFont="@string/noto_arabic_regular"
+        app:btnArabicFontSize="14"
+        app:btnEnglishFont="@string/noto_regular"
+        app:btnEnglishFontSize="16"
+        app:btnLetterSpacing="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelBottomSheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_take_pic"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparateTakeUpload" />
+
+    <com.toters.twilio_chat_module.widgets.CustomMaterialButton
+        android:id="@+id/btnCancelBottomSheet"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:text="@string/cancel"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/redColor"
+        app:btnArabicFont="@string/noto_arabic_regular"
+        app:btnArabicFontSize="14"
+        app:btnEnglishFont="@string/noto_regular"
+        app:btnEnglishFontSize="16"
+        app:btnLetterSpacing="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_upload_gallery" />
+</androidx.constraintlayout.widget.ConstraintLayout>

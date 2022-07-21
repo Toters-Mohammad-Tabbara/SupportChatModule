@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <include
+        android:id="@+id/chat_date_layout"
+        layout="@layout/chat_date_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topSpace" />
+
+    <Space
+        android:id="@+id/topSpace"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backgroundMessageBody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/messageBody"
+        app:layout_constraintEnd_toEndOf="@+id/messageBody"
+        app:layout_constraintStart_toEndOf="@+id/ic_tail"
+        app:layout_constraintTop_toTopOf="@+id/messageBody"
+        app:srcCompat="@drawable/chat_bubble_agent_shape"
+        tools:ignore="ContentDescription" />
+
+
+    <Space
+        android:id="@+id/bubbleStartSpace"
+        android:layout_width="8dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/backgroundMessageBody"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/bubbleStartSpace"
+        app:layout_constraintTop_toTopOf="@+id/messageBody"
+        app:srcCompat="@drawable/ic_image"
+        tools:ignore="ContentDescription" />
+
+
+    <com.toters.twilio_chat_module.widgets.CustomTextView
+        android:id="@+id/messageBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:autoLink="web"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="21dp"
+        android:textColor="@color/black"
+        android:textColorLink="#3366BB"
+        android:visibility="visible"
+        app:arabicFont="@string/noto_arabic_regular"
+        app:arabicFontSize="13"
+        app:englishFont="@string/noto_regular"
+        app:englishFontSize="14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageIcon"
+        app:layout_constraintTop_toBottomOf="@+id/chat_date_layout"
+        tools:maxLength="300"
+        tools:text="@tools:sample/lorem/random"/>
+
+    <ImageView
+        android:id="@+id/ic_tail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messageBody"
+        app:srcCompat="@drawable/ic_agent_chat_tail"
+        tools:ignore="ContentDescription" />
+
+    <com.toters.twilio_chat_module.widgets.CustomTextView
+        android:id="@+id/messageDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="#8E93A0"
+        app:arabicFont="@string/noto_arabic_regular"
+        app:arabicFontSize="9"
+        app:englishFont="@string/noto_regular"
+        app:englishFontSize="10"
+        app:layout_constraintBottom_toBottomOf="@+id/messageBody"
+        app:layout_constraintEnd_toEndOf="@+id/messageBody" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
